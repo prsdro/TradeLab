@@ -9,13 +9,15 @@
 *{box-sizing:border-box} html,body{margin:0;min-width:0;background:var(--bg);color:var(--text)} body{overflow-x:hidden;line-height:1.45;font-feature-settings:"tnum" 1,"ss01" 1;text-rendering:optimizeLegibility}
 .page{width:min(100%,1320px);margin:0 auto;padding:clamp(24px,4vw,64px);background:linear-gradient(180deg,#0b0c0f 0%,#08090b 42%,#07080a 100%)}
 .hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:end;margin-bottom:30px;padding-bottom:22px;border-bottom:1px solid var(--line)}.eyebrow{color:var(--amber);font-weight:800;letter-spacing:.18em;text-transform:uppercase;font-size:12px}.title{font-size:clamp(42px,6vw,76px);line-height:.92;font-weight:760;letter-spacing:-.055em;margin-top:10px}.sub{max-width:860px;font-size:clamp(15px,1.45vw,19px);color:var(--muted);font-weight:520;margin-top:14px}.badge{border:1px solid var(--line);border-radius:999px;padding:11px 16px;background:#111317;color:var(--soft);font-size:13px;font-weight:750;white-space:nowrap}
-.filterbar{position:sticky;top:0;z-index:30;margin:0 0 26px;padding:12px;border:1px solid rgba(255,255,255,.09);border-radius:20px;background:rgba(12,13,16,.90);backdrop-filter:blur(16px);display:flex;gap:10px;align-items:center;flex-wrap:wrap;box-shadow:0 10px 34px rgba(0,0,0,.25)}.pill{border:1px solid var(--line);border-radius:999px;background:#13151a;color:var(--soft);min-height:40px;padding:10px 14px;font-weight:700;font-size:13px}.rangeCtl{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;background:#101217;color:var(--soft);min-height:40px;padding:7px 10px;font-weight:750;font-size:12px}.rangeCtl input{background:#0b0c0f;color:var(--soft);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:6px 8px;font:inherit;min-width:180px}.curveTip{pointer-events:none}.curveTipBox{filter:drop-shadow(0 10px 24px rgba(0,0,0,.45))}.pill.action{cursor:pointer}.pill.action:hover{border-color:#5b6473;background:#1b1f27;color:#fff}.status{margin-left:auto;color:var(--muted);font-size:13px;font-weight:700}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-bottom:24px}.card,.panel{background:linear-gradient(180deg,var(--surface2),var(--surface));border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}.metric{padding:20px}.label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.13em;font-weight:800}.val{font-size:clamp(18px,1.65vw,26px);font-weight:760;letter-spacing:-.045em;margin-top:10px;line-height:1.05;white-space:nowrap;overflow:visible;word-break:normal;overflow-wrap:normal;font-variant-numeric:tabular-nums}.note{font-size:12px;color:var(--muted);font-weight:560;margin-top:8px;line-height:1.4}.good{color:var(--green)}.bad{color:var(--red)}.amber{color:var(--amber)}
-.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px}.panel{padding:24px;position:relative;min-width:0}.panel h2{margin:0;font-size:clamp(20px,2vw,28px);font-weight:720;letter-spacing:-.035em}.hint{font-size:13px;color:var(--muted);font-weight:520;margin:8px 0 16px;line-height:1.5;max-width:90%}.wide{grid-column:1/-1}.svg{width:100%;height:auto;display:block;touch-action:none}.expand{position:absolute;right:18px;top:18px;border:1px solid var(--line);background:#121419;color:var(--soft);border-radius:999px;padding:8px 11px;font-size:12px;font-weight:760;cursor:pointer}.expand:hover{border-color:#606a78;color:#fff}.panel:hover{border-color:rgba(255,255,255,.20)}
+.filterbar{position:sticky;top:0;z-index:30;margin:0 0 26px;padding:12px;border:1px solid rgba(255,255,255,.09);border-radius:20px;background:rgba(12,13,16,.90);backdrop-filter:blur(16px);display:flex;gap:10px;align-items:center;flex-wrap:wrap;box-shadow:0 10px 34px rgba(0,0,0,.25)}.pill{border:1px solid var(--line);border-radius:999px;background:#13151a;color:var(--soft);min-height:40px;padding:10px 14px;font-weight:700;font-size:13px}.rangeCtl{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;background:#101217;color:var(--soft);min-height:40px;padding:7px 10px;font-weight:750;font-size:12px}.rangeCtl input{background:#0b0c0f;color:var(--soft);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:6px 8px;font:inherit;min-width:180px}.curveTip{pointer-events:none}.curveTipBox{filter:drop-shadow(0 10px 24px rgba(0,0,0,.45))}.pill.action{cursor:pointer}.pill.action:hover{border-color:#5b6473;background:#1b1f27;color:#fff}.pill.jump-link{display:inline-flex;align-items:center;justify-content:center;text-decoration:none}.status{margin-left:auto;color:var(--muted);font-size:13px;font-weight:700}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-bottom:24px}.card,.panel{background:linear-gradient(180deg,var(--surface2),var(--surface));border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}.metric{padding:20px}.label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.13em;font-weight:800}.val{font-size:clamp(18px,1.65vw,26px);font-weight:760;letter-spacing:-.045em;margin-top:10px;line-height:1.05;white-space:nowrap;overflow:visible;word-break:normal;overflow-wrap:normal;font-variant-numeric:tabular-nums}.note{font-size:12px;color:var(--muted);font-weight:560;margin-top:8px;line-height:1.4}.good{color:var(--green)}.bad{color:var(--red)}.amber{color:var(--amber)}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px}.panel{padding:24px;position:relative;min-width:0}.panel h2{margin:0;font-size:clamp(20px,2vw,28px);font-weight:720;letter-spacing:-.035em}.hint{font-size:13px;color:var(--muted);font-weight:520;margin:8px 0 16px;line-height:1.5;max-width:90%}.wide{grid-column:1/-1}.svg{width:100%;height:auto;display:block;touch-action:none}.expand{position:absolute;right:18px;top:18px;border:1px solid var(--line);background:#121419;color:var(--soft);border-radius:999px;padding:8px 11px;font-size:12px;font-weight:760;cursor:pointer;transition:transform .14s cubic-bezier(.2,0,0,1),border-color .15s,color .15s,background .15s}.expand:hover{border-color:#606a78;color:#fff}.expand:active{transform:scale(.96)}.expand.expand-curve{padding:9px 13px;min-height:40px}#curvePanel h2{padding-right:152px}.panel:hover{border-color:rgba(255,255,255,.20)}
 .calgrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.dow{font-size:11px;color:var(--muted);font-weight:800;text-align:center;letter-spacing:.14em;text-transform:uppercase}.day{border:1px solid rgba(255,255,255,.10);border-radius:16px;padding:12px;min-height:88px;cursor:pointer;transition:.15s transform,.15s border-color;display:flex;flex-direction:column;justify-content:space-between}.day:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.38)}.day.selected{outline:2px solid #fff;box-shadow:0 0 0 5px rgba(255,209,102,.20)}.day b{font-size:14px}.day span{font-size:16px;font-weight:760}.day em{font-style:normal;font-size:11px;color:rgba(255,255,255,.75);font-weight:650}.day.empty{background:#111317;color:#696b70;cursor:default}.day.empty:hover{transform:none}
 .scatter-wrap{position:relative}.selectionBox{position:absolute;border:1.5px solid #fff;background:rgba(102,163,255,.16);pointer-events:none;display:none}.xToggle{display:inline-flex;gap:0;border:1px solid var(--line);border-radius:999px;padding:3px;background:#101217;margin-top:8px}.xTab{appearance:none;border:0;background:transparent;color:var(--muted);font:inherit;font-size:12px;font-weight:800;letter-spacing:.02em;padding:6px 12px;border-radius:999px;cursor:pointer;min-height:30px}.xTab.active{background:#ffd166;color:#08090b}.xTab:not(.active):hover{color:var(--soft)}.selectActions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;align-items:center}.selectActions .pill{min-height:38px;padding:8px 12px}.small{font-size:12px;color:var(--muted);font-weight:620}.scenarioBox{margin-top:14px;padding:14px 16px;border:1px solid rgba(255,209,102,.35);border-radius:16px;background:rgba(255,209,102,.07);color:var(--soft);font-size:13px;font-weight:560;line-height:1.5}.scenarioBox b{color:var(--amber)}.legend{display:flex;gap:12px;align-items:center;flex-wrap:wrap;color:var(--muted);font-size:12px;font-weight:650}.sw{width:18px;height:10px;border-radius:99px;display:inline-block}.sw.g{background:var(--green)}.sw.r{background:var(--red)}
-table{width:100%;border-collapse:separate;border-spacing:0 10px;font-size:14px}th{text-align:left;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.1em;padding:0 10px;font-weight:800}td{background:#13151a;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 10px;font-weight:620}td:first-child{border-left:1px solid var(--line);border-radius:12px 0 0 12px}td:last-child{border-right:1px solid var(--line);border-radius:0 12px 12px 0}.ticks{display:flex;gap:4px;flex-wrap:wrap}.tick{width:9px;height:28px;border-radius:6px}.tick.w{background:var(--green)}.tick.l{background:var(--red)}.tick.excluded{opacity:.18}.mini{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.hour{border:1px solid var(--line);border-radius:15px;padding:13px;text-align:center;background:#13151a}.hour b,.hour span{display:block}.hour b{font-size:13px}.hour span{font-size:12px;color:var(--muted);font-weight:620;margin-top:5px}.modal{position:fixed;inset:0;background:rgba(4,5,7,.88);z-index:100;display:none;align-items:center;justify-content:center;padding:18px}.modal.open{display:flex}.modalCard{width:min(96vw,1320px);max-height:92vh;overflow:auto;background:#111317;border:1px solid #3a404b;border-radius:26px;padding:26px}.close{float:right;border:1px solid var(--line);background:#15171b;color:var(--soft);border-radius:999px;padding:9px 13px;font-weight:800;cursor:pointer}.foot{color:var(--muted);font-size:13px;font-weight:520;line-height:1.55;margin:24px 2px 0}
+table{width:100%;border-collapse:separate;border-spacing:0 10px;font-size:14px}th{text-align:left;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.1em;padding:0 10px;font-weight:800}td{background:#13151a;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 10px;font-weight:620}td:first-child{border-left:1px solid var(--line);border-radius:12px 0 0 12px}td:last-child{border-right:1px solid var(--line);border-radius:0 12px 12px 0}.ticks{display:flex;gap:4px;flex-wrap:wrap}.tick{width:9px;height:28px;border-radius:6px}.tick.w{background:var(--green)}.tick.l{background:var(--red)}.tick.excluded{opacity:.18}.mini{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.hour{border:1px solid var(--line);border-radius:15px;padding:13px;text-align:center;background:#13151a}.hour b,.hour span{display:block}.hour b{font-size:13px}.hour span{font-size:12px;color:var(--muted);font-weight:620;margin-top:5px}.modal{position:fixed;inset:0;background:rgba(4,5,7,.88);z-index:100;display:none;align-items:center;justify-content:center;padding:18px}.modal.open{display:flex}.modalCard{width:min(96vw,1320px);max-height:92vh;overflow:auto;background:#111317;border:1px solid #3a404b;border-radius:26px;padding:26px}.modalCard.curveModalCard{width:min(96vw,1400px);max-height:92vh;padding:18px 18px 14px;display:flex;flex-direction:column}.curveModalBody{margin-top:8px;display:flex;justify-content:center;align-items:flex-start}.curveModalBody .svg{width:auto;max-width:100%;height:min(60vh,560px)}.close{float:right;border:1px solid var(--line);background:#15171b;color:var(--soft);border-radius:999px;padding:9px 13px;font-weight:800;cursor:pointer}.foot{color:var(--muted);font-size:13px;font-weight:520;line-height:1.55;margin:24px 2px 0}
+#sizingPanel{scroll-margin-top:108px}.sizing-toolbar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:6px 0 18px}.sizing-field{display:flex;flex-direction:column;gap:7px;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.sizing-field input[type="number"]{width:100%;min-height:44px;padding:11px 12px;border:1px solid rgba(255,255,255,.12);border-radius:14px;background:#0d0f13;color:var(--soft);font:inherit;font-size:14px;font-weight:800;letter-spacing:0}.sizing-stop-row{display:grid;grid-template-columns:minmax(0,1fr) 92px auto;gap:10px;align-items:center}.sizing-stop-row input[type="range"]{width:100%;accent-color:#ffd166;cursor:pointer}.sizing-stop-row input[type="number"]{min-height:40px;padding:9px 10px;border-radius:12px}.sizing-stop-row b{font-size:14px;color:var(--soft)}.sizing-mode{display:flex;gap:8px;align-items:flex-end;flex-wrap:wrap;height:100%}.sizing-mode .xToggle{margin-top:0;min-height:44px;padding:4px}.sizing-mode .xTab{min-height:36px;padding:8px 13px}.sizing-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:18px}.sizing-stat{padding:18px 18px 16px;border:1px solid rgba(255,255,255,.08);border-radius:16px;background:linear-gradient(180deg,#17191e,#111318);box-shadow:0 12px 32px rgba(0,0,0,.22)}.sizing-stat-label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.13em;font-weight:800}.sizing-stat-value{margin-top:11px;font-size:clamp(20px,2vw,30px);font-weight:780;letter-spacing:-.04em;line-height:1.02;font-variant-numeric:tabular-nums}.sizing-stat-note{margin-top:8px;font-size:12px;color:var(--muted);font-weight:560;line-height:1.45;text-wrap:pretty}.sizing-callout{display:grid;grid-template-columns:1.25fr .95fr;gap:16px;margin-bottom:16px}.sizing-note-card{padding:16px 18px;border:1px solid rgba(255,209,102,.28);border-radius:16px;background:linear-gradient(180deg,rgba(255,209,102,.10),rgba(255,209,102,.04));color:var(--soft)}.sizing-note-card b{color:var(--amber)}.sizing-note-card p{margin:0;font-size:13px;line-height:1.55;text-wrap:pretty}.sizing-mini-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.sizing-mini{padding:14px 15px;border:1px solid rgba(255,255,255,.08);border-radius:14px;background:#121419}.sizing-mini b,.sizing-mini span{display:block;font-variant-numeric:tabular-nums}.sizing-mini b{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.11em}.sizing-mini span{margin-top:8px;font-size:19px;font-weight:760;letter-spacing:-.03em}.sizing-table-wrap{overflow-x:auto;margin-bottom:18px}.sizing-table td,.sizing-table th{white-space:nowrap}.sizing-table tr.is-active td{box-shadow:inset 0 0 0 1px rgba(255,209,102,.55)}.sizing-table td:first-child{font-weight:780}.sizing-table .muted-cell{color:var(--muted)}.sizing-table .neg{color:var(--red)}.sizing-table .pos{color:var(--green)}.sizing-legend{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:0 0 10px;color:var(--muted);font-size:12px;font-weight:650}.sizing-legend .line{width:20px;height:4px;border-radius:999px;display:inline-block}.sizing-legend .line.full{background:#ffd166}.sizing-legend .line.selected{background:#66a3ff}.sizing-chart-wrap{padding:16px;border:1px solid rgba(255,255,255,.08);border-radius:16px;background:#0d0f13;margin-bottom:16px}.sizing-copy{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.sizing-copy-block{padding:16px 18px;border:1px solid rgba(255,255,255,.08);border-radius:16px;background:#121419}.sizing-copy-block h3{margin:0 0 10px;font-size:14px;letter-spacing:.02em}.sizing-copy-block p{margin:0;font-size:13px;line-height:1.6;color:var(--muted);text-wrap:pretty}.sizing-copy-block code{color:var(--soft);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px}
 @media (max-width:1050px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}.grid{grid-template-columns:1fr}.hero{grid-template-columns:1fr}.status{margin-left:0;width:100%}.mini{grid-template-columns:repeat(2,minmax(0,1fr))}.hint{max-width:100%}}
-@media (max-width:620px){.page{padding:18px;overflow:hidden}.cards{grid-template-columns:1fr;gap:11px}.metric,.panel{padding:16px;border-radius:16px}.val{font-size:clamp(18px,5vw,22px);letter-spacing:-.055em;white-space:normal}.filterbar{border-radius:16px}.pill{font-size:12px;min-height:38px}.calgrid{gap:7px}.day{padding:9px;min-height:78px;border-radius:13px}.day span{font-size:12px}.day em{font-size:10px}.title{font-size:clamp(34px,12vw,48px);letter-spacing:-.045em;overflow-wrap:anywhere}.sub,.hint{overflow-wrap:anywhere}.expand{display:none}.panel h2{padding-right:0}.badge:not(a){display:none}a.badge{padding:8px 12px;font-size:12px;margin-left:6px!important}table{font-size:12px}.hide-mobile{display:none}.hero{grid-template-columns:1fr;gap:14px}}
+@media (max-width:900px){.sizing-toolbar,.sizing-summary,.sizing-callout,.sizing-copy{grid-template-columns:1fr}.sizing-mini-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:620px){.page{padding:18px;overflow:hidden}.cards{grid-template-columns:1fr;gap:11px}.metric,.panel{padding:16px;border-radius:16px}.val{font-size:clamp(18px,5vw,22px);letter-spacing:-.055em;white-space:normal}.filterbar{border-radius:16px}.pill{font-size:12px;min-height:38px}.calgrid{gap:7px}.day{padding:9px;min-height:78px;border-radius:13px}.day span{font-size:12px}.day em{font-size:10px}.title{font-size:clamp(34px,12vw,48px);letter-spacing:-.045em;overflow-wrap:anywhere}.sub,.hint{overflow-wrap:anywhere}.expand{display:none}.expand.expand-curve{display:inline-flex;align-items:center;justify-content:center;right:12px;top:12px;padding:8px 10px;font-size:11px}.panel h2{padding-right:0}#curvePanel h2{padding-right:118px}.modalCard.curveModalCard{width:min(96vw,1280px);padding:16px 16px 12px}.curveModalBody .svg{height:min(52vh,380px)}.badge:not(a){display:none}a.badge{padding:8px 12px;font-size:12px;margin-left:6px!important}table{font-size:12px}.hide-mobile{display:none}.hero{grid-template-columns:1fr;gap:14px}.sizing-stop-row{grid-template-columns:1fr 84px auto}.sizing-stat{padding:16px}.sizing-chart-wrap{padding:12px}}
 
 </style><link rel="stylesheet" href="/assets/mobile.css?v=carousel7">
 </head><body>
@@ -42,6 +44,7 @@ table{width:100%;border-collapse:separate;border-spacing:0 10px;font-size:14px}t
       <button class="xTab" data-session="eth" role="tab">ETH</button>
     </div>
     <button class="pill action" id="resetAll" type="button">Reset</button>
+    <a class="pill action jump-link" href="#sizingPanel">Position sizing</a>
     <span class="status" id="filterStatus"></span>
   </div>
   <div class="dr-popover" id="dateRangePopover" hidden>
@@ -75,8 +78,9 @@ table{width:100%;border-collapse:separate;border-spacing:0 10px;font-size:14px}t
   <div class="grid" id="grid">
     <section class="panel" id="calendarPanel" data-card-id="calendarPanel"><button class="expand">Expand</button><h2>Calendar heatmap (net $)</h2><div class="hint">Level I filter: click one or more day cells. All charts and statistics recalculate from the selected days. Click toggles selection on either calendar.</div><label style="display:inline-flex;gap:6px;align-items:center;margin-top:6px;font-size:11px;color:var(--muted);cursor:pointer;letter-spacing:.04em"><input type="checkbox" id="hideCalCounts" style="accent-color:#ffd166;cursor:pointer"> Hide trade counts</label><div id="calendar"></div></section>
     <section class="panel" id="pctCalendarPanel" data-card-id="pctCalendarPanel"><button class="expand">Expand</button><h2>Calendar heatmap (return %)</h2><div class="hint">Return on deployed capital per day = daily net PnL / daily entry gross cost. Same day-click toggle as the dollar calendar.</div><div id="pctCalendar"></div></section>
-    <section class="panel" id="curvePanel" data-card-id="curvePanel"><button class="expand">Expand</button><h2>Cumulative PnL curve</h2><div class="hint">Running realized PnL. Multi-day filtered sets bucket into RTH hours (overnight gaps removed). Single-day filtered sets flex to actual first-entry → last-exit window with intraday ticks.</div><div id="curve"></div></section>
+    <section class="panel" id="curvePanel" data-card-id="curvePanel"><button class="expand expand-curve" type="button">Expand chart</button><h2>Cumulative PnL curve</h2><div class="hint">Running realized PnL. Multi-day filtered sets bucket into RTH hours (overnight gaps removed). Single-day filtered sets flex to actual first-entry → last-exit window with intraday ticks.</div><div id="curve"></div></section>
     <section class="panel" id="payoffPanel" data-card-id="payoffPanel"><button class="expand">Expand</button><h2>Payoff waterfall</h2><div class="hint">Average gross win contribution - average gross loss contribution - average fee per round trip = average net trade.</div><div id="payoff"></div><div class="small">Fee is broker drag averaged across round-trip trades. Win/loss bars are frequency-weighted gross PnL contributions so the waterfall ties exactly to Avg Trade.</div></section>
+    <section class="panel wide" id="sizingPanel" data-card-id="sizingPanel"><button class="expand">Expand</button><h2>Position sizing</h2><div class="hint">Traditional, unadjusted Kelly sizing for the current filtered non-futures trade set. This module ignores the scatter scenario line and applies its own max-loss cap so you can compare full, half, quarter, double Kelly, and no-stop sizing on the same sample.</div><div class="sizing-toolbar"><label class="sizing-field">Account size<input type="number" id="kellyAccountInput" min="1000" step="500" inputmode="decimal"></label><label class="sizing-field">Max loss per trade<div class="sizing-stop-row"><input type="range" id="kellyStopRange" min="10" max="100" step="5"><input type="number" id="kellyStopInput" min="10" max="100" step="5" inputmode="decimal"><b>%</b></div></label><div class="sizing-field">Kelly mode<div class="sizing-mode"><div class="xToggle" id="kellyModeToggle" role="tablist" aria-label="Kelly sizing mode"><button class="xTab" data-kelly-mode="full" type="button" role="tab">Full</button><button class="xTab active" data-kelly-mode="half" type="button" role="tab">Half</button><button class="xTab" data-kelly-mode="quarter" type="button" role="tab">Quarter</button></div></div></div></div><div class="sizing-summary" id="sizingSummary"></div><div class="sizing-callout"><div class="sizing-note-card" id="sizingSensitivityNote"></div><div class="sizing-mini-grid" id="sizingEdgeGrid"></div></div><div class="sizing-table-wrap"><table class="sizing-table"><thead><tr><th>Scenario</th><th>Kelly risk</th><th>Premium size</th><th>Max risk</th><th>Exp. P/L / trade</th><th>Log growth / trade</th><th>Practical ruin</th><th>Exp. max DD</th></tr></thead><tbody id="sizingSensitivityBody"></tbody></table></div><div class="sizing-chart-wrap"><div class="sizing-legend"><span class="line full"></span>full Kelly position size <span class="line selected"></span>selected mode position size</div><div id="sizingRolling"></div></div><div class="sizing-copy"><div class="sizing-copy-block" id="sizingCalcCopy"></div><div class="sizing-copy-block" id="sizingAssumptionCopy"></div></div></section>
     <section class="panel wide" id="scatterPanel" data-card-id="scatterPanel"><button class="expand">Expand</button><h2>Return scatter</h2><div class="xToggle" role="tablist"><button class="xTab active" data-x="duration" role="tab">Duration</button><button class="xTab" data-x="time" role="tab">Time of day</button><button class="xTab" id="bubbleToggle" type="button" title="Size dots by P&amp;L $" style="margin-left:8px; border:1px solid var(--line); padding:6px 12px;">Bubbles</button></div><div class="hint">Drag the right-side amber handle to set your max-loss threshold. Box-select dots to include/exclude, or model selected losers as if they stopped at the line. Switch the X axis between hold duration and entry time of day; selection and threshold carry across views.</div><div class="scatter-wrap"><div id="scatter"></div><div class="selectionBox" id="selectionBox"></div></div><div class="selectActions"><button class="pill action" id="includeSelection">Include selected</button><button class="pill action" id="excludeSelection">Exclude selected</button><button class="pill action" id="moveBelowLine">Move below line to line</button><button class="pill action" id="clearScenario">Clear scenario</button><span class="small" id="selectionCount">No dots selected</span></div><div class="scenarioBox" id="scenarioPanel">Drag the amber line to test max-loss rules. Then move selected dots below the line to that level.</div></section>
     <section class="panel" id="distPanel" data-card-id="distPanel"><button class="expand">Expand</button><h2>Return distribution</h2><div class="hint">Trade-level return percent for the current filtered set.</div><div id="hist"></div></section>
     <section class="panel" id="sessionPanel" data-card-id="sessionPanel"><button class="expand">Expand</button><h2>Session profit factor</h2><div class="hint">Entry-time buckets in Central Time (RTH 8:30-15:00 CST). PF = sum winning net PnL / abs(sum losing net PnL).</div><div id="sessions"></div></section>
@@ -160,8 +164,22 @@ let scenarioIds = new Set();
 let rangeStart = null;
 let rangeEnd = null;
 let rangePreset = null;  // 'today' | 'last7' | 'thisweek' | 'thismonth' | 'last30' | 'all' | null (custom)
+let kellyAccountSize = (() => { try { const v = parseFloat(localStorage.getItem('tl_kelly_account') || '30000'); return Number.isFinite(v) && v > 0 ? v : 30000; } catch(e) { return 30000; } })();
+let kellyStopPct = (() => { try { const v = parseFloat(localStorage.getItem('tl_kelly_stop') || '50'); return Number.isFinite(v) ? Math.max(10, Math.min(100, Math.round(v / 5) * 5)) : 50; } catch(e) { return 50; } })();
+let kellyMode = (() => { try { const v = localStorage.getItem('tl_kelly_mode') || 'half'; return ['full','half','quarter'].includes(v) ? v : 'half'; } catch(e) { return 'half'; } })();
+const KELLY_MODE_MULT = { full: 1, half: 0.5, quarter: 0.25 };
+const KELLY_SIM_PATHS = 800;
+const KELLY_SIM_HORIZON = 250;
+const KELLY_RUIN_FLOOR = 0.25;
+let kellyCacheKey = '';
+let kellyCacheValue = null;
 const $ = id => document.getElementById(id);
 const money = (x,d=0) => (x>=0?'+$':'-$') + Math.abs(x).toLocaleString(undefined,{minimumFractionDigits:d,maximumFractionDigits:d});
+const moneyPlain = (x,d=0) => Number.isFinite(x) ? (x<0?'-$':'$') + Math.abs(x).toLocaleString(undefined,{minimumFractionDigits:d,maximumFractionDigits:d}) : '—';
+const kellyPct = (x,d=2) => Number.isFinite(x) ? `${x >= 0 ? '' : '-'}${Math.abs(x * 100).toFixed(d)}%` : '—';
+const kellyRatio = (x,d=2) => Number.isFinite(x) ? x.toFixed(d) : '—';
+const kellyDec = (x,d=4) => Number.isFinite(x) ? x.toFixed(d) : '—';
+const kellyBps = (x,d=1) => Number.isFinite(x) ? `${(x * 10000).toFixed(d)} bps` : '—';
 // Show 2 decimals when |x| < 1 so we don't display "-0.0%" / "+0.0%" for
 // small-but-nonzero values (e.g. a tiny loss day rounding to -0.0%).
 const pct = x => {
@@ -182,8 +200,20 @@ function parseSourceMs(s){if(typeof s==='number') return s; const str=String(s||
 function cstHM(s){const p=tzParts(parseSourceMs(s),DISPLAY_TZ); return {h:+p.hour, m:+p.minute};}
 function cstMinutes(s){const t=cstHM(s); return t.h*60+t.m;}
 function cstTimeLabel(s){const t=cstHM(s); return String(t.h).padStart(2,'0')+':'+String(t.m).padStart(2,'0')+' CT';}
+function cstTimeLabelFromMs(ms){const t=tzParts(ms,DISPLAY_TZ); return String(+t.hour).padStart(2,'0')+':'+String(+t.minute).padStart(2,'0');}
+function cstDateLabel(day){
+  const m=String(day||'').match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if(!m) return String(day||'');
+  return new Intl.DateTimeFormat(undefined,{month:'short',day:'numeric',timeZone:'UTC'}).format(new Date(Date.UTC(+m[1],+m[2]-1,+m[3],12)));
+}
+function curveHourLabel(hour){
+  if(hour===8) return '8:30am';
+  const suffix=hour>=12?'pm':'am';
+  const hh=((hour+11)%12)+1;
+  return `${hh}${suffix}`;
+}
 function sessionBucket(s){const m=cstMinutes(s); if(m>=510&&m<690)return 'Morning'; if(m>=690&&m<840)return 'Midday'; if(m>=840&&m<885)return 'Power hour'; if(m>=885&&m<=900)return 'End of day'; return 'Outside RTH';}
-const toMs = s => new Date(s.replace(' ','T')).getTime();
+const toMs = s => parseSourceMs(s);
 const fmtDT = s => s.slice(5,10)+' '+cstTimeLabel(s);
 const fmtDate = ms => new Date(ms).toLocaleDateString(undefined,{month:'short',day:'numeric'});
 function inRange(t){const x=toMs(t.exit_dt); return (rangeStart==null || x>=rangeStart) && (rangeEnd==null || x<=rangeEnd);}
@@ -211,25 +241,224 @@ function currentBaseTrades(){return axisBaseTrades().filter(t => scatterMode==='
 function adjustedTrade(t){ if(!(scenarioActive && scenarioIds.has(t.id) && t.pnl_pct < thresholdPct)) return t; const net = t.entry_gross_cost * thresholdPct / 100; return {...t, net_pnl: net, gross_pnl: net - t.costs, pnl_pct: thresholdPct, scenario_moved: true}; }
 function applyScenario(items){ return items.map(adjustedTrade); }
 function summarize(items){const n=items.length, wins=items.filter(t=>t.net_pnl>1e-9), losses=items.filter(t=>t.net_pnl<-1e-9); const net=items.reduce((a,t)=>a+t.net_pnl,0), gross=items.reduce((a,t)=>a+t.gross_pnl,0), cost=items.reduce((a,t)=>a+t.entry_gross_cost,0); const winSum=wins.reduce((a,t)=>a+t.net_pnl,0), lossSum=losses.reduce((a,t)=>a+t.net_pnl,0); const arr=items.map(t=>t.net_pnl).sort((a,b)=>a-b); const med=n?(arr[Math.floor((n-1)/2)]+arr[Math.ceil((n-1)/2)])/2:0; let run=0,peak=0,maxDD=0; items.slice().sort((a,b)=>toMs(a.exit_dt)-toMs(b.exit_dt)||a.seq-b.seq).forEach(t=>{run+=t.net_pnl; peak=Math.max(peak,run); maxDD=Math.min(maxDD,run-peak);}); const feeSum=items.reduce((a,t)=>a+(t.fee_drag||t.costs||0),0); return {n,wins:wins.length,losses:losses.length,wr:n?wins.length/n*100:0,net,gross,pct:cost?net/cost*100:0,pf:lossSum?winSum/Math.abs(lossSum):null,avg:n?net/n:0,med,avgw:wins.length?winSum/wins.length:0,avgl:losses.length?lossSum/losses.length:0,fees:feeSum,avgFee:n?feeSum/n:0,maxDD};}
+function kellyEligibleTrades(items){
+  return items.filter(t => !t.is_futures && Number.isFinite(t.entry_gross_cost) && t.entry_gross_cost > 0 && Number.isFinite(t.net_pnl) && t.exit_date);
+}
+function kellyHash(str){
+  let h = 2166136261 >>> 0;
+  for(let i=0;i<str.length;i++){ h ^= str.charCodeAt(i); h = Math.imul(h, 16777619); }
+  return h >>> 0;
+}
+function kellyRng(seed){
+  let a = seed >>> 0;
+  return function(){
+    a |= 0; a = (a + 0x6D2B79F5) | 0;
+    let t = Math.imul(a ^ a >>> 15, 1 | a);
+    t ^= t + Math.imul(t ^ t >>> 7, 61 | t);
+    return ((t ^ t >>> 14) >>> 0) / 4294967296;
+  };
+}
+function expectedLogGrowth(returns, premiumFraction){
+  if(!returns.length || !Number.isFinite(premiumFraction) || premiumFraction < 0) return null;
+  if(premiumFraction === 0) return 0;
+  let total = 0;
+  for(const r of returns){
+    const mult = 1 + premiumFraction * r;
+    if(!(mult > 0)) return -Infinity;
+    total += Math.log(mult);
+  }
+  return total / returns.length;
+}
+function simulateKelly(returns, premiumFraction, seed){
+  if(!returns.length || !Number.isFinite(premiumFraction) || premiumFraction < 0) return { ruinProb:null, meanMaxDrawdown:null };
+  if(premiumFraction === 0) return { ruinProb:0, meanMaxDrawdown:0 };
+  const rand = kellyRng(seed);
+  let ruined = 0, drawdownSum = 0;
+  for(let path=0; path<KELLY_SIM_PATHS; path++){
+    let equity = 1, peak = 1, maxDD = 0, hitRuin = false;
+    for(let step=0; step<KELLY_SIM_HORIZON; step++){
+      const r = returns[(rand() * returns.length) | 0];
+      const mult = 1 + premiumFraction * r;
+      if(!(mult > 0)){
+        equity = 0;
+        maxDD = 1;
+        hitRuin = true;
+        break;
+      }
+      equity *= mult;
+      if(equity > peak) peak = equity;
+      const dd = 1 - (equity / peak);
+      if(dd > maxDD) maxDD = dd;
+      if(equity <= KELLY_RUIN_FLOOR) hitRuin = true;
+    }
+    if(hitRuin) ruined++;
+    drawdownSum += maxDD;
+  }
+  return { ruinProb: ruined / KELLY_SIM_PATHS, meanMaxDrawdown: drawdownSum / KELLY_SIM_PATHS };
+}
+function computeKellyModel(items, stopPct, fullRisk=false){
+  const stopFrac = fullRisk ? 1 : Math.max(0.10, Math.min(1, stopPct / 100));
+  const rows = kellyEligibleTrades(items).map(t => {
+    const cappedPnl = fullRisk ? t.net_pnl : Math.max(t.net_pnl, -t.entry_gross_cost * stopFrac);
+    return { ...t, sizing_pnl: cappedPnl, sizing_ret: cappedPnl / t.entry_gross_cost };
+  });
+  const n = rows.length;
+  const wins = rows.filter(t => t.sizing_pnl > 1e-9);
+  const losses = rows.filter(t => t.sizing_pnl < -1e-9);
+  const scratches = n - wins.length - losses.length;
+  const p = n ? wins.length / n : null;
+  const q = n ? losses.length / n : null;
+  const avgWinDollars = wins.length ? wins.reduce((s,t)=>s+t.sizing_pnl,0) / wins.length : null;
+  const avgLossDollars = losses.length ? Math.abs(losses.reduce((s,t)=>s+t.sizing_pnl,0) / losses.length) : null;
+  const avgWinReturn = wins.length ? wins.reduce((s,t)=>s+t.sizing_ret,0) / wins.length : null;
+  const avgLossReturn = losses.length ? Math.abs(losses.reduce((s,t)=>s+t.sizing_ret,0) / losses.length) : null;
+  const b = (Number.isFinite(avgWinDollars) && Number.isFinite(avgLossDollars) && avgLossDollars > 0) ? avgWinDollars / avgLossDollars : null;
+  const rawKelly = (Number.isFinite(b) && b > 0 && Number.isFinite(p) && Number.isFinite(q)) ? ((b * p) - q) / b : null;
+  const returns = rows.map(t => t.sizing_ret);
+  const meanReturn = returns.length ? returns.reduce((s,x)=>s+x,0) / returns.length : null;
+  const tradingDays = new Set(rows.map(t => t.exit_date)).size;
+  return {
+    stopFrac, fullRisk, rows, returns, meanReturn, n, wins:wins.length, losses:losses.length, scratches,
+    p, q, scratchRate: n ? scratches / n : null,
+    avgWinDollars, avgLossDollars, avgWinReturn, avgLossReturn, b,
+    rawKelly, clampedKelly: Number.isFinite(rawKelly) ? Math.max(0, rawKelly) : null,
+    tradingDays
+  };
+}
+function kellyScenario(model, riskScale, accountSize, label, seedKey){
+  const rawRiskFrac = Number.isFinite(model.rawKelly) ? model.rawKelly * riskScale : null;
+  const appliedRiskFrac = Number.isFinite(rawRiskFrac) ? Math.max(0, rawRiskFrac) : null;
+  const premiumFrac = Number.isFinite(appliedRiskFrac) ? appliedRiskFrac / model.stopFrac : null;
+  const positionSize = Number.isFinite(premiumFrac) ? accountSize * premiumFrac : null;
+  const maxRisk = Number.isFinite(appliedRiskFrac) ? accountSize * appliedRiskFrac : null;
+  const expectedProfit = (Number.isFinite(positionSize) && Number.isFinite(model.meanReturn)) ? positionSize * model.meanReturn : null;
+  const logGrowth = Number.isFinite(premiumFrac) ? expectedLogGrowth(model.returns, premiumFrac) : null;
+  const sim = Number.isFinite(premiumFrac) ? simulateKelly(model.returns, premiumFrac, kellyHash(seedKey)) : { ruinProb:null, meanMaxDrawdown:null };
+  return { label, rawRiskFrac, appliedRiskFrac, premiumFrac, positionSize, maxRisk, expectedProfit, logGrowth, ruinProb:sim.ruinProb, meanMaxDrawdown:sim.meanMaxDrawdown };
+}
+function computeKellyRollingSeries(items, stopPct, accountSize){
+  const base = kellyEligibleTrades(items);
+  const days = [...new Set(base.map(t => t.exit_date))].sort();
+  if(days.length < 10) return [];
+  const byDay = new Map();
+  base.forEach(t => { if(!byDay.has(t.exit_date)) byDay.set(t.exit_date, []); byDay.get(t.exit_date).push(t); });
+  const out = [];
+  for(let i=9; i<days.length; i++){
+    const windowDays = new Set(days.slice(i - 9, i + 1));
+    const windowTrades = base.filter(t => windowDays.has(t.exit_date));
+    const model = computeKellyModel(windowTrades, stopPct, false);
+    if(model.n < 10 || !Number.isFinite(model.rawKelly)) continue;
+    const fullRisk = Math.max(0, model.rawKelly);
+    out.push({
+      day: days[i],
+      fullSize: (fullRisk / model.stopFrac) * accountSize,
+      fullRiskFrac: fullRisk,
+      trades: model.n
+    });
+  }
+  return out;
+}
+function currentKellyData(baseItems){
+  const eligible = kellyEligibleTrades(baseItems);
+  const key = eligible.map(t => t.id).join('|') + `::${kellyStopPct}::${kellyAccountSize}`;
+  if(key === kellyCacheKey && kellyCacheValue) return kellyCacheValue;
+  const stopModel = computeKellyModel(eligible, kellyStopPct, false);
+  const noStopModel = computeKellyModel(eligible, kellyStopPct, true);
+  const rows = [
+    { key:'full',    mode:'full',    ...kellyScenario(stopModel, 1,   kellyAccountSize, `Full Kelly · ${kellyStopPct}% stop`, `${key}::full`) },
+    { key:'half',    mode:'half',    ...kellyScenario(stopModel, 0.5, kellyAccountSize, `Half Kelly · ${kellyStopPct}% stop`, `${key}::half`) },
+    { key:'quarter', mode:'quarter', ...kellyScenario(stopModel, 0.25,kellyAccountSize, `Quarter Kelly · ${kellyStopPct}% stop`, `${key}::quarter`) },
+    { key:'double',  mode:'double',  ...kellyScenario(stopModel, 2,   kellyAccountSize, `Double Kelly · ${kellyStopPct}% stop`, `${key}::double`) },
+    { key:'nostop',  mode:'nostop',  ...kellyScenario(noStopModel, 1, kellyAccountSize, 'Full Kelly · no stop', `${key}::nostop`) },
+  ];
+  const rolling = computeKellyRollingSeries(eligible, kellyStopPct, kellyAccountSize);
+  kellyCacheKey = key;
+  kellyCacheValue = { eligible, stopModel, noStopModel, rows, rolling };
+  return kellyCacheValue;
+}
+function syncKellyControls(){
+  if($('kellyAccountInput')) $('kellyAccountInput').value = String(Math.round(kellyAccountSize));
+  if($('kellyStopRange')) $('kellyStopRange').value = String(kellyStopPct);
+  if($('kellyStopInput')) $('kellyStopInput').value = String(kellyStopPct);
+  document.querySelectorAll('#kellyModeToggle .xTab').forEach(btn => btn.classList.toggle('active', btn.dataset.kellyMode === kellyMode));
+}
+function persistKellyState(){
+  try {
+    localStorage.setItem('tl_kelly_account', String(Math.round(kellyAccountSize)));
+    localStorage.setItem('tl_kelly_stop', String(kellyStopPct));
+    localStorage.setItem('tl_kelly_mode', kellyMode);
+  } catch(e) {}
+}
+function wireKellyControls(){
+  const panel = $('sizingPanel');
+  if(!panel || panel.dataset.wired === '1') return;
+  panel.dataset.wired = '1';
+  const normalizeStop = v => {
+    const num = parseFloat(v);
+    if(!Number.isFinite(num)) return kellyStopPct;
+    return Math.max(10, Math.min(100, Math.round(num / 5) * 5));
+  };
+  const accountEl = $('kellyAccountInput');
+  if(accountEl){
+    const commit = () => {
+      const next = parseFloat(accountEl.value);
+      if(Number.isFinite(next) && next > 0) kellyAccountSize = Math.max(1000, next);
+      syncKellyControls();
+      persistKellyState();
+      render();
+    };
+    accountEl.addEventListener('change', commit);
+    accountEl.addEventListener('blur', commit);
+  }
+  const stopRange = $('kellyStopRange');
+  const stopInput = $('kellyStopInput');
+  const setStop = v => {
+    kellyStopPct = normalizeStop(v);
+    syncKellyControls();
+    persistKellyState();
+    render();
+  };
+  if(stopRange) stopRange.addEventListener('input', e => setStop(e.target.value));
+  if(stopInput){
+    stopInput.addEventListener('change', e => setStop(e.target.value));
+    stopInput.addEventListener('blur', e => setStop(e.target.value));
+  }
+  document.querySelectorAll('#kellyModeToggle .xTab').forEach(btn => btn.addEventListener('click', () => {
+    if(!['full','half','quarter'].includes(btn.dataset.kellyMode)) return;
+    kellyMode = btn.dataset.kellyMode;
+    syncKellyControls();
+    persistKellyState();
+    render();
+  }));
+  syncKellyControls();
+}
 function card(label,val,klass,note){return `<div class="card metric"><div class="label">${label}</div><div class="val ${klass||''}">${val}</div><div class="note">${note||''}</div></div>`}
 function svgWrap(w,h,body){return `<svg viewBox="0 0 ${w} ${h}" class="svg" role="img"><rect width="${w}" height="${h}" rx="16" fill="#0b0c0f"/>${body}</svg>`}
-function tradingDayKey(ms){return new Date(ms).toISOString().slice(0,10);}
-function rthHourStartMs(day,hour){return new Date(`${day}T${String(hour).padStart(2,'0')}:00:00`).getTime();}
-function compactHourlyCurvePoints(effectiveItems){
+function rthHourStartMs(day,hour){
+  return parseSourceMs(`${day} ${String(hour).padStart(2,'0')}:${hour===8?'30':'00'}:00`);
+}
+function compactCurveDomain(effectiveItems){
   const sorted=effectiveItems.slice().sort((a,b)=>toMs(a.exit_dt)-toMs(b.exit_dt)||a.seq-b.seq);
-  if(!sorted.length) return [];
-  const byHour=new Map(), daySet=new Set();
+  if(!sorted.length) return null;
+  return { days:[...new Set(sorted.map(t=>t.exit_date))].sort() };
+}
+function compactHourlyCurvePoints(effectiveItems, domain){
+  const sorted=effectiveItems.slice().sort((a,b)=>toMs(a.exit_dt)-toMs(b.exit_dt)||a.seq-b.seq);
+  const activeDomain = domain || compactCurveDomain(effectiveItems);
+  if(!activeDomain || !activeDomain.days.length) return [];
+  const byHour=new Map();
   sorted.forEach(t=>{
-    const ms=toMs(t.exit_dt), d=tradingDayKey(ms), local=new Date(ms), h=local.getHours();
-    daySet.add(d);
-    // Bucket against 8:30-15:00 CST (raw timestamps treated as Central wall-clock).
+    const d=t.exit_date, h=cstHM(t.exit_dt).h;
+    // Bucket against 8:30-15:00 CT using the stored wall-clock time, not the
+    // browser's local timezone, so late Friday exits never spill into weekend
+    // placeholders.
     let bucketHour = h < 8 ? 8 : h > 15 ? 15 : h;
     const k=`${d}|${bucketHour}`;
     const prev=byHour.get(k)||{delta:0,count:0,examples:[]};
     prev.delta+=t.net_pnl; prev.count+=1; if(prev.examples.length<3) prev.examples.push(t.symbol);
     byHour.set(k,prev);
   });
-  const days=[...daySet].sort();
+  const days=activeDomain.days;
   const pts=[]; let cum=0, idx=0;
   days.forEach(day=>{
     for(let hour=8; hour<=15; hour++){
@@ -241,13 +470,19 @@ function compactHourlyCurvePoints(effectiveItems){
   return pts;
 }
 // Intraday curve points for single-day filtered views: flex from first entry to last exit, 10-min buckets.
-function intradayCurvePoints(effectiveItems){
+function intradayCurveDomain(effectiveItems){
   const sorted=effectiveItems.slice().sort((a,b)=>toMs(a.exit_dt)-toMs(b.exit_dt)||a.seq-b.seq);
-  if(!sorted.length) return [];
+  if(!sorted.length) return null;
   const firstEntry=Math.min(...sorted.map(t=>toMs(t.entry_dt)));
   const lastExit=Math.max(...sorted.map(t=>toMs(t.exit_dt)));
   const STEP=10*60*1000;
-  const start=Math.floor(firstEntry/STEP)*STEP, end=Math.ceil(lastExit/STEP)*STEP;
+  return { start:Math.floor(firstEntry/STEP)*STEP, end:Math.ceil(lastExit/STEP)*STEP, step:STEP };
+}
+function intradayCurvePoints(effectiveItems, domain){
+  const sorted=effectiveItems.slice().sort((a,b)=>toMs(a.exit_dt)-toMs(b.exit_dt)||a.seq-b.seq);
+  const activeDomain = domain || intradayCurveDomain(effectiveItems);
+  if(!activeDomain) return [];
+  const { start, end, step: STEP } = activeDomain;
   const buckets=new Map();
   sorted.forEach(t=>{const k=Math.floor(toMs(t.exit_dt)/STEP)*STEP; const prev=buckets.get(k)||{delta:0,count:0}; prev.delta+=t.net_pnl; prev.count+=1; buckets.set(k,prev);});
   const pts=[]; let cum=0, idx=0;
@@ -258,54 +493,241 @@ function intradayCurvePoints(effectiveItems){
   }
   return pts;
 }
+let lastCurveItems = [];
 function fmtCurveTickPoint(p, compact=false){
   if(!p) return '';
   if(p.intraday){
-    const d=new Date(p.labelMs);
-    const hh=String(d.getHours()).padStart(2,'0'), mm=String(d.getMinutes()).padStart(2,'0');
-    if(compact) return `${hh}:${mm} CST`;
-    return `${d.toLocaleDateString(undefined,{month:'short',day:'numeric'})} ${hh}:${mm} CST`;
+    const lab=cstTimeLabelFromMs(p.labelMs);
+    const [hh,mm]=lab.split(':');
+    if(compact) return `${hh}:${mm}`;
+    return `${new Intl.DateTimeFormat(undefined,{month:'short',day:'numeric',timeZone:DISPLAY_TZ}).format(new Date(p.labelMs))} ${hh}:${mm} CT`;
   }
-  if(compact) return new Date(p.labelMs).toLocaleDateString(undefined,{month:'short',day:'numeric'});
-  const suffix=p.hour===15?'3pm':(p.hour===8?'8:30am':new Date(p.labelMs).toLocaleTimeString(undefined,{hour:'numeric'}));
-  return `${new Date(p.labelMs).toLocaleDateString(undefined,{month:'short',day:'numeric'})} ${suffix} CST`;
+  const dayLabel=cstDateLabel(p.day);
+  if(compact) return dayLabel;
+  return `${dayLabel} ${curveHourLabel(p.hour)} CT`;
 }
-function renderCurve(items){
+function curveAxisStep(maxAbs){
+  const steps = [500, 1000, 2500, 5000, 10000, 25000, 50000, 100000];
+  for (const step of steps) {
+    const limit = Math.ceil(maxAbs / step) * step;
+    if (((limit / step) * 2) + 1 <= 13) return step;
+  }
+  return 100000;
+}
+function curveTickStepForSpan(span){
+  const steps = [100, 250, 500, 1000, 2500, 5000, 10000, 25000, 50000, 100000];
+  for (const step of steps) {
+    if (span / step <= 9) return step;
+  }
+  return 100000;
+}
+let curveYScale = 1;
+let curveAxisDrag = null;
+const CURVE_Y_SCALE_MIN = 0.35;
+const CURVE_Y_SCALE_MAX = 5;
+function curveClamp(v, lo, hi){ return Math.max(lo, Math.min(hi, v)); }
+function curveAxisLimit(value){
+  const safe = Math.max(500, value);
+  const step = curveAxisStep(safe);
+  return Math.max(step, Math.ceil(safe / step) * step);
+}
+function curveAxisTicks(lo, hi, step){
+  const ticks = [];
+  for (let v = lo; v <= hi + step * 0.5; v += step) ticks.push(Math.abs(v) < 1e-6 ? 0 : v);
+  return ticks;
+}
+function curveAxisRange(pts){
+  if(!pts.length) return { lo:-500, hi:500, ticks:[-500,0,500] };
+  const ys = pts.map(p => p.y);
+  const rawLo = Math.min(0, ...ys);
+  const rawHi = Math.max(0, ...ys);
+  const span = Math.max(500, rawHi - rawLo);
+  const padBase = Math.max(70, span * 0.08);
+  const posVisible = rawHi > 0 ? rawHi + padBase * curveYScale : 0;
+  const negVisible = rawLo < 0 ? Math.abs(rawLo) + padBase * curveYScale : 0;
+  let lo = rawLo < 0 ? -negVisible : 0;
+  let hi = rawHi > 0 ? posVisible : 0;
+  const step = curveTickStepForSpan(Math.max(500, hi - lo));
+  lo = rawLo < 0 ? Math.floor(lo / step) * step : 0;
+  hi = rawHi > 0 ? Math.ceil(hi / step) * step : 0;
+  if (rawLo >= 0) lo = 0;
+  if (rawHi <= 0) hi = 0;
+  return { lo, hi, ticks:curveAxisTicks(lo, hi, step) };
+}
+function curveSeparatedLabelYs(a, b, minGap, minY, maxY){
+  let y1 = curveClamp(a, minY, maxY);
+  let y2 = curveClamp(b, minY, maxY);
+  if(Math.abs(y1 - y2) >= minGap) return [y1, y2];
+  const firstAbove = y1 <= y2;
+  const mid = (y1 + y2) / 2;
+  y1 = mid + (firstAbove ? -minGap / 2 : minGap / 2);
+  y2 = mid + (firstAbove ? minGap / 2 : -minGap / 2);
+  if(y1 < minY){ const shift = minY - y1; y1 += shift; y2 += shift; }
+  if(y2 < minY){ const shift = minY - y2; y1 += shift; y2 += shift; }
+  if(y1 > maxY){ const shift = y1 - maxY; y1 -= shift; y2 -= shift; }
+  if(y2 > maxY){ const shift = y2 - maxY; y1 -= shift; y2 -= shift; }
+  return [curveClamp(y1, minY, maxY), curveClamp(y2, minY, maxY)];
+}
+function rerenderCurveOnly(){
+  if(!lastCurveItems.length && !$('curveModalChart')) return;
+  const baselineCurve = axisBaseTrades();
+  const overlayScatterCurve = curveOverlayActive();
+  renderCurve(lastCurveItems, { baselineItems: baselineCurve, showOriginalOverlay: overlayScatterCurve });
+  if($('curveModalChart')) renderCurve(lastCurveItems, { targetId:'curveModalChart', expanded:true, baselineItems: baselineCurve, showOriginalOverlay: overlayScatterCurve });
+}
+function stopCurveAxisDrag(){
+  if(!curveAxisDrag) return;
+  curveAxisDrag = null;
+  document.removeEventListener('pointermove', onCurveAxisDragMove);
+  document.removeEventListener('pointerup', stopCurveAxisDrag);
+  document.removeEventListener('pointercancel', stopCurveAxisDrag);
+  document.body.style.cursor = '';
+  document.body.style.userSelect = '';
+  if(Math.abs(curveYScale - 1) < 0.03){
+    curveYScale = 1;
+    rerenderCurveOnly();
+  }
+}
+function onCurveAxisDragMove(e){
+  if(!curveAxisDrag) return;
+  const next = curveClamp(curveAxisDrag.startScale * Math.exp((e.clientY - curveAxisDrag.startY) / 140), CURVE_Y_SCALE_MIN, CURVE_Y_SCALE_MAX);
+  if(Math.abs(next - curveYScale) < 0.01) return;
+  curveYScale = next;
+  rerenderCurveOnly();
+}
+function startCurveAxisDrag(e){
+  if(e.pointerType === 'touch') return;
+  curveAxisDrag = { startY: e.clientY, startScale: curveYScale };
+  document.addEventListener('pointermove', onCurveAxisDragMove);
+  document.addEventListener('pointerup', stopCurveAxisDrag);
+  document.addEventListener('pointercancel', stopCurveAxisDrag);
+  document.body.style.cursor = 'ns-resize';
+  document.body.style.userSelect = 'none';
+  e.preventDefault();
+}
+function resetCurveAxisScale(){
+  if(curveYScale === 1) return;
+  curveYScale = 1;
+  rerenderCurveOnly();
+}
+function openCurveModal(){
+  const modal = $('modal');
+  const card = modal && modal.querySelector('.modalCard');
+  if (!modal || !card) return;
+  card.classList.add('curveModalCard');
+  $('modalContent').innerHTML = '<h2 style="margin:0">Cumulative PnL curve</h2><div class="hint" style="margin:10px 0 0">Expanded view of the current filter scope.</div><div class="curveModalBody" id="curveModalChart"></div>';
+  modal.classList.add('open');
+  renderCurve(lastCurveItems, { targetId: 'curveModalChart', expanded: true, baselineItems: axisBaseTrades(), showOriginalOverlay: curveOverlayActive() });
+}
+function closeModal(){
+  const modal = $('modal');
+  if (!modal) return;
+  modal.classList.remove('open');
+  const card = modal.querySelector('.modalCard');
+  if (card) card.classList.remove('curveModalCard');
+}
+function curveOverlayActive(){return scatterMode!=='none' || scenarioActive;}
+function renderCurve(items, opts={}){
+  const targetId = opts.targetId || 'curve';
+  const mount = $(targetId);
+  if (!mount) return;
+  if (targetId === 'curve') lastCurveItems = items.slice();
+  const baselineItems = opts.baselineItems || items;
+  const showOriginalOverlay = !!(opts.showOriginalOverlay && baselineItems.length);
   // On mobile we use a much taller viewBox so the chart fills its container's
   // natural aspect ratio (≈ 1:1) instead of leaving empty space above/below.
+  const expanded = !!opts.expanded;
   const isMobile = (typeof window!=='undefined') && window.matchMedia && window.matchMedia('(max-width: 720px)').matches;
-  const w=760, h=isMobile?720:350, left=62, right=724, top=24, bottom=h-68;
-  const labelY = bottom + 25;       // x-axis tick labels just below chart area
-  const subtitleY = h - 17;          // bottom subtitle
-  const midY = Math.round(h / 2);    // for vertical rotated label
-  const distinctDays=new Set(items.map(t=>t.exit_date));
-  const intradayMode = distinctDays.size===1 && items.length>=1;
-  const pts = intradayMode ? intradayCurvePoints(items) : compactHourlyCurvePoints(items);
-  if(!pts.length){$('curve').innerHTML=svgWrap(w,h,`<text x="${w/2}" y="${midY}" fill="#9d9a91" text-anchor="middle" font-size="14" font-weight="750">No trades in selected time range</text>`); return;}
-  const xMin=0, xMax=Math.max(1,pts.length-1), span=xMax-xMin;
-  const ys=[0,...pts.map(p=>p.y)], ymin=Math.min(0,...ys), ymax=Math.max(0,...ys), pad=(ymax-ymin)*.14||100, lo=ymin-pad, hi=ymax+pad;
+  const w=expanded?(isMobile?860:1100):760;
+  const h=expanded?(isMobile?680:520):(isMobile?720:390);
+  const left=expanded?92:72;
+  const annotationWidth=showOriginalOverlay?(expanded?220:184):(expanded?136:118);
+  const right=w-annotationWidth;
+  const top=26;
+  const bottom=h-(expanded?92:82);
+  const labelY = bottom + 30;
+  const subtitleY = h - 20;
+  const midY = Math.round(h / 2);
+  const distinctDays=new Set(baselineItems.map(t=>t.exit_date));
+  const intradayMode = distinctDays.size===1 && baselineItems.length>=1;
+  const domain = intradayMode ? intradayCurveDomain(baselineItems) : compactCurveDomain(baselineItems);
+  const pts = intradayMode ? intradayCurvePoints(items, domain) : compactHourlyCurvePoints(items, domain);
+  const originalPts = showOriginalOverlay ? (intradayMode ? intradayCurvePoints(baselineItems, domain) : compactHourlyCurvePoints(baselineItems, domain)) : null;
+  if(!pts.length && !originalPts?.length){mount.innerHTML=svgWrap(w,h,`<text x="${w/2}" y="${midY}" fill="#9d9a91" text-anchor="middle" font-size="16" font-weight="750">No trades in selected time range</text>`); return;}
+  const axisPts = originalPts || pts;
+  const adjustedPts = pts.length ? pts : [];
+  const xMin=0, xMax=Math.max(1,axisPts.length-1), span=xMax-xMin;
+  const { lo, hi, ticks } = curveAxisRange([...(originalPts||[]), ...pts]);
   const X=x=>left+(x-xMin)/span*(right-left), Y=y=>top+(hi-y)/(hi-lo)*(bottom-top);
-  const path=pts.map((p,i)=>(i?'L':'M')+X(p.x).toFixed(1)+','+Y(p.y).toFixed(1)).join(' '); const zero=Y(0);
-  let body=`<line x1="${left}" y1="${zero}" x2="${right}" y2="${zero}" stroke="#3b414d"/><path d="${path}" fill="none" stroke="#30d158" stroke-width="3.5" stroke-linecap="round"/>`;
+  const path=adjustedPts.map((p,i)=>(i?'L':'M')+X(p.x).toFixed(1)+','+Y(p.y).toFixed(1)).join(' ');
+  const originalPath=originalPts ? originalPts.map((p,i)=>(i?'L':'M')+X(p.x).toFixed(1)+','+Y(p.y).toFixed(1)).join(' ') : '';
+  const zero=Y(0);
+  const clipSeed = targetId.replace(/[^a-z0-9]/ig,'_');
+  const clipAboveId = `curveClipAbove_${clipSeed}`;
+  const clipBelowId = `curveClipBelow_${clipSeed}`;
+  const arrowId = `curveArrow_${clipSeed}`;
+  const lineWidth = expanded?4.5:4;
+  const fadedLineWidth = expanded?3.5:3.1;
+  const seriesMarkup = (pathData, opacity, width) => `<path d="${pathData}" fill="none" stroke="#30d158" stroke-width="${width}" stroke-linecap="round" clip-path="url(#${clipAboveId})" opacity="${opacity}"/><path d="${pathData}" fill="none" stroke="#ff453a" stroke-width="${width}" stroke-linecap="round" clip-path="url(#${clipBelowId})" opacity="${opacity}"/>`;
+  const gripX = Math.max(14, left - 38);
+  let body=`<g opacity=".56" pointer-events="none"><line x1="${gripX}" y1="${midY-14}" x2="${gripX+16}" y2="${midY-14}" stroke="#8f8a80" stroke-width="1.5" stroke-linecap="round"/><line x1="${gripX}" y1="${midY}" x2="${gripX+16}" y2="${midY}" stroke="#8f8a80" stroke-width="1.5" stroke-linecap="round"/><line x1="${gripX}" y1="${midY+14}" x2="${gripX+16}" y2="${midY+14}" stroke="#8f8a80" stroke-width="1.5" stroke-linecap="round"/></g><rect x="0" y="${top}" width="${Math.max(18,left-16)}" height="${bottom-top}" fill="rgba(255,255,255,0.001)" data-curve-axis-drag="1" style="cursor:ns-resize"><title>Drag to zoom the Y-axis. Double-click to reset.</title></rect>`;
+  ticks.forEach(v=>{
+    const yy = Y(v);
+    const isZero = v === 0;
+    body += `<line x1="${left}" y1="${yy}" x2="${right}" y2="${yy}" stroke="${isZero?'#ffffff':'#252a33'}" stroke-width="${isZero?2:1}" opacity="${isZero?'.82':'1'}"/><text x="${left-10}" y="${yy+4}" fill="${isZero?'#f4f1ea':'#b8b2a7'}" font-size="${expanded?13.5:12.5}" font-weight="${isZero?820:700}" text-anchor="end">${money(v)}</text>`;
+  });
   if(intradayMode){
-    const tickCount=Math.min(8,Math.max(2,pts.length));
-    for(let i=0;i<tickCount;i++){const idx=Math.round(i*(pts.length-1)/(tickCount-1||1)), p=pts[idx], x=X(p.x); body+=`<line x1="${x}" y1="${top}" x2="${x}" y2="${bottom}" stroke="#252a33"/><text x="${x}" y="${labelY}" fill="#9d9a91" font-size="10.5" text-anchor="middle">${fmtCurveTickPoint(p,true)}</text>`;}
+    const tickCount=Math.min(expanded?10:8,Math.max(2,axisPts.length));
+    for(let i=0;i<tickCount;i++){const idx=Math.round(i*(axisPts.length-1)/(tickCount-1||1)), p=axisPts[idx], x=X(p.x); body+=`<line x1="${x}" y1="${top}" x2="${x}" y2="${bottom}" stroke="#252a33"/><text x="${x}" y="${labelY}" fill="#b8b2a7" font-size="${expanded?13.25:12.25}" font-weight="700" text-anchor="middle">${fmtCurveTickPoint(p,true)}</text>`;}
   } else {
-    const days=[...new Set(pts.map(p=>p.day))];
-    if(days.length<=14){
-      days.forEach(day=>{const p=pts.find(x=>x.day===day && x.hour===8) || pts.find(x=>x.day===day); const x=X(p.x); body+=`<line x1="${x}" y1="${top}" x2="${x}" y2="${bottom}" stroke="#252a33"/><text x="${x}" y="${labelY}" fill="#9d9a91" font-size="10.5" text-anchor="middle">${fmtCurveTickPoint(p,true)}</text>`;});
+    const days=[...new Set(axisPts.map(p=>p.day))];
+    if(days.length<=(expanded?16:14)){
+      days.forEach(day=>{const p=axisPts.find(x=>x.day===day && x.hour===8) || axisPts.find(x=>x.day===day); const x=X(p.x); body+=`<line x1="${x}" y1="${top}" x2="${x}" y2="${bottom}" stroke="#252a33"/><text x="${x}" y="${labelY}" fill="#b8b2a7" font-size="${expanded?13.25:12.25}" font-weight="700" text-anchor="middle">${fmtCurveTickPoint(p,true)}</text>`;});
     } else {
-      for(let i=0;i<6;i++){const idx=Math.round(i*(pts.length-1)/5), p=pts[idx], x=X(p.x); body+=`<line x1="${x}" y1="${top}" x2="${x}" y2="${bottom}" stroke="#252a33"/><text x="${x}" y="${labelY}" fill="#9d9a91" font-size="10.5" text-anchor="middle">${fmtCurveTickPoint(p,true)}</text>`;}
+      for(let i=0;i<6;i++){const idx=Math.round(i*(axisPts.length-1)/5), p=axisPts[idx], x=X(p.x); body+=`<line x1="${x}" y1="${top}" x2="${x}" y2="${bottom}" stroke="#252a33"/><text x="${x}" y="${labelY}" fill="#b8b2a7" font-size="${expanded?13.25:12.25}" font-weight="700" text-anchor="middle">${fmtCurveTickPoint(p,true)}</text>`;}
     }
   }
-  [ymin,0,ymax].forEach(y=>{const yy=Y(y); body+=`<line x1="${left}" y1="${yy}" x2="${right}" y2="${yy}" stroke="#252a33"/><text x="${left-8}" y="${yy+4}" fill="#9d9a91" font-size="11" text-anchor="end">${money(y)}</text>`;});
-  const activeBuckets=pts.filter(p=>p.count>0).length;
-  const subtitle = intradayMode ? `Single-day intraday 10-min exit buckets CST • flexed to first entry → last exit • ${activeBuckets} active bucket(s), ${items.length} trade(s)` : `RTH hourly exit buckets CST only • overnight gaps removed • ${activeBuckets} active hour(s), ${items.length} trade(s)`;
-  body+=`<text x="${w/2}" y="${subtitleY}" fill="#9d9a91" font-size="12" font-weight="650" text-anchor="middle">${subtitle}</text><text x="18" y="${midY}" fill="#9d9a91" font-size="12" font-weight="650" transform="rotate(-90 18 ${midY})" text-anchor="middle">Cumulative PnL in selected range</text><g id="curveHover" class="curveTip" style="display:none"></g>`;
-  $('curve').innerHTML=svgWrap(w,h,body);
-  const svg=$('curve').querySelector('svg'), hover=$('curveHover');
+  body+=`<defs><clipPath id="${clipAboveId}"><rect x="${left}" y="${top}" width="${right-left}" height="${Math.max(0,zero-top).toFixed(1)}"/></clipPath><clipPath id="${clipBelowId}"><rect x="${left}" y="${zero.toFixed(1)}" width="${right-left}" height="${Math.max(0,bottom-zero).toFixed(1)}"/></clipPath><marker id="${arrowId}" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#f4f1ea"/></marker></defs>`;
+  if (originalPath) body += seriesMarkup(originalPath, '.24', fadedLineWidth);
+  if (path) body += seriesMarkup(path, '1', lineWidth);
+  const last = adjustedPts[adjustedPts.length-1] || null;
+  const endX = last ? X(last.x) : null, endY = last ? Y(last.y) : null, endColor = last ? (last.y >= 0 ? '#30d158' : '#ff453a') : null;
+  const originalLast = originalPts ? originalPts[originalPts.length-1] : null;
+  const originalEndY = originalLast ? Y(originalLast.y) : null;
+  const originalColor = originalLast ? (originalLast.y >= 0 ? '#30d158' : '#ff453a') : null;
+  const hoverId = `curveHover_${targetId.replace(/[^a-z0-9]/ig,'_')}`;
+  const pillHeight = expanded?28:26;
+  const pillRadius = expanded?14:13;
+  const pillWidth = annotationWidth - (expanded?26:20);
+  const pillLeft = right + (expanded?14:10);
+  const pillCenterX = pillLeft + pillWidth/2;
+  const leaderX = pillLeft - 8;
+  const labelMinY = top + pillHeight/2 + 6;
+  const labelMaxY = bottom - pillHeight/2 - 6;
+  if (originalLast) body += `<circle cx="${right}" cy="${originalEndY}" r="${expanded?5:4.5}" fill="${originalColor}" opacity=".52" stroke="#f4f1ea" stroke-width="1.6"/>`;
+  if (last) body += `<circle cx="${endX}" cy="${endY}" r="${expanded?5.5:5}" fill="${endColor}" stroke="#08090b" stroke-width="2.5"/>`;
+  if (originalLast && last) {
+    const originalText = `Original ${money(originalLast.y,2)}`;
+    const adjustedText = `Adjusted ${money(last.y,2)}`;
+    const [originalLabelY, adjustedLabelY] = curveSeparatedLabelYs(originalEndY, endY, pillHeight + 10, labelMinY, labelMaxY);
+    const arrowX = pillLeft - 18;
+    body += `<line x1="${right+6}" y1="${originalEndY}" x2="${leaderX}" y2="${originalLabelY}" stroke="${originalColor}" stroke-width="1.6" opacity=".55"/><line x1="${right+6}" y1="${endY}" x2="${leaderX}" y2="${adjustedLabelY}" stroke="${endColor}" stroke-width="1.8" opacity=".88"/><line x1="${arrowX}" y1="${originalLabelY}" x2="${arrowX}" y2="${adjustedLabelY}" stroke="#f4f1ea" stroke-width="1.7" marker-end="url(#${arrowId})" opacity=".92"/><g class="curveTipBox"><rect x="${pillLeft}" y="${(originalLabelY-pillHeight/2).toFixed(1)}" width="${pillWidth}" height="${pillHeight}" rx="${pillRadius}" fill="#111318" stroke="${originalColor}" stroke-width="1.1"/><text x="${pillCenterX}" y="${(originalLabelY+(expanded?4.75:4.25)).toFixed(1)}" fill="${originalColor}" font-size="${expanded?12.6:11.7}" font-weight="860" text-anchor="middle">${originalText}</text></g><g class="curveTipBox"><rect x="${pillLeft}" y="${(adjustedLabelY-pillHeight/2).toFixed(1)}" width="${pillWidth}" height="${pillHeight}" rx="${pillRadius}" fill="#111318" stroke="${endColor}" stroke-width="1.1"/><text x="${pillCenterX}" y="${(adjustedLabelY+(expanded?4.75:4.25)).toFixed(1)}" fill="${endColor}" font-size="${expanded?12.6:11.7}" font-weight="900" text-anchor="middle">${adjustedText}</text></g>`;
+  } else if (last) {
+    const endLabel = money(last.y,2);
+    const labelCenterY = curveClamp(endY, labelMinY, labelMaxY);
+    body += `<line x1="${right+6}" y1="${endY}" x2="${leaderX}" y2="${labelCenterY}" stroke="${endColor}" stroke-width="1.8" opacity=".9"/><g class="curveTipBox"><rect x="${pillLeft}" y="${(labelCenterY-pillHeight/2).toFixed(1)}" width="${pillWidth}" height="${pillHeight}" rx="${pillRadius}" fill="#111318" stroke="${endColor}" stroke-width="1.2"/><text x="${pillCenterX}" y="${(labelCenterY+(expanded?4.75:4.25)).toFixed(1)}" fill="${endColor}" font-size="${expanded?13.2:12.4}" font-weight="900" text-anchor="middle">${endLabel}</text></g>`;
+  }
+  body+=`<text x="${w/2}" y="${subtitleY}" fill="#b8b2a7" font-size="${expanded?13.75:13.25}" font-weight="700" text-anchor="middle">${intradayMode?'Time':'Day'}</text><text x="20" y="${midY}" fill="#b8b2a7" font-size="${expanded?13.75:13.25}" font-weight="700" transform="rotate(-90 20 ${midY})" text-anchor="middle">${intradayMode?'Cumulative PnL - Day':'Cumulative PnL - Date Range'}</text><g id="${hoverId}" class="curveTip" style="display:none"></g>`;
+  mount.innerHTML=svgWrap(w,h,body);
+  const svg=mount.querySelector('svg'), hover=document.getElementById(hoverId);
+  const dragZone = mount.querySelector('[data-curve-axis-drag="1"]');
+  if(dragZone){
+    dragZone.onpointerdown = startCurveAxisDrag;
+    dragZone.ondblclick = e => { e.preventDefault(); resetCurveAxisScale(); };
+  }
   if(hover){
-    svg.onpointermove=e=>{const r=svg.getBoundingClientRect(), local=(e.clientX-r.left)*w/r.width, targetX=(Math.max(left,Math.min(right,local))-left)/(right-left)*span; let best=pts[0]; for(const p of pts){if(Math.abs(p.x-targetX)<Math.abs(best.x-targetX)) best=p;} const hx=X(best.x), hy=Y(best.y); const label=`${fmtCurveTickPoint(best,false)} • bucket ${money(best.delta,2)} • cum ${money(best.y,2)}`; const tx=Math.min(Math.max(hx,205),w-205); hover.style.display='block'; hover.innerHTML=`<line x1="${hx}" y1="${top}" x2="${hx}" y2="${bottom}" stroke="#ffd166" stroke-width="2"/><circle cx="${hx}" cy="${hy}" r="5" fill="#ffd166" stroke="#08090b" stroke-width="2"/><g class="curveTipBox"><rect x="${tx-195}" y="${top+8}" width="390" height="42" rx="12" fill="#111318" stroke="#ffd166"/><text x="${tx}" y="${top+34}" fill="#f4f1ea" font-size="12.5" font-weight="850" text-anchor="middle">${label}</text></g>`;};
+    const hoverPts=adjustedPts.length?adjustedPts:axisPts;
+    svg.onpointermove=e=>{const r=svg.getBoundingClientRect(), local=(e.clientX-r.left)*w/r.width, targetX=(Math.max(left,Math.min(right,local))-left)/(right-left)*span; let best=hoverPts[0]; for(const p of hoverPts){if(Math.abs(p.x-targetX)<Math.abs(best.x-targetX)) best=p;} const hx=X(best.x), hy=Y(best.y); const label=`${fmtCurveTickPoint(best,false)} • bucket ${money(best.delta,2)} • cumulative ${money(best.y,2)}`; const tx=Math.min(Math.max(hx,220),w-220); hover.style.display='block'; hover.innerHTML=`<line x1="${hx}" y1="${top}" x2="${hx}" y2="${bottom}" stroke="#ffd166" stroke-width="2"/><circle cx="${hx}" cy="${hy}" r="5" fill="#ffd166" stroke="#08090b" stroke-width="2"/><g class="curveTipBox"><rect x="${tx-205}" y="${top+8}" width="410" height="44" rx="12" fill="#111318" stroke="#ffd166"/><text x="${tx}" y="${top+35}" fill="#f4f1ea" font-size="${expanded?13.5:12.75}" font-weight="850" text-anchor="middle">${label}</text></g>`;};
     svg.onpointerleave=()=>{hover.style.display='none'};
   }
 }
@@ -427,6 +849,102 @@ function renderPctCalendar(items){
 function renderPayoff(items){const s=summarize(items), n=s.n||1; const grossWin=items.filter(t=>t.gross_pnl>0).reduce((a,t)=>a+t.gross_pnl,0)/n; const grossLoss=items.filter(t=>t.gross_pnl<0).reduce((a,t)=>a+t.gross_pnl,0)/n; const fee=s.avgFee; const avg=s.avg; const steps=[['Win contrib.',grossWin],['Loss contrib.',grossLoss],['Avg fees',fee],['Avg trade',avg]]; const isMobile=(typeof window!=='undefined')&&window.matchMedia&&window.matchMedia('(max-width: 720px)').matches; const w=760,h=isMobile?640:320,left=54,bw=120,gap=54; const vals=[0,grossWin,grossWin+grossLoss,grossWin+grossLoss+fee,avg]; const lo=Math.min(0,...vals), hi=Math.max(0,...vals), pad=(hi-lo)*.22||1; const Y=y=>42+(hi+pad-y)/(hi-lo+pad*2)*(h-96); let prev=0, body=`<line x1="36" y1="${Y(0)}" x2="724" y2="${Y(0)}" stroke="#3b414d"/>`; steps.forEach((st,i)=>{const [lab,v]=st, isTotal=i===3, start=isTotal?0:prev, end=isTotal?v:prev+v, y=Math.min(Y(start),Y(end)), ht=Math.max(3,Math.abs(Y(start)-Y(end))), x=left+i*(bw+gap), col=v>=0?'#30d158':'#ff453a'; body+=`<rect x="${x}" y="${y}" width="${bw}" height="${ht}" rx="8" fill="${col}" opacity=".9"/><text x="${x+bw/2}" y="${h-36}" text-anchor="middle" fill="#d8d2c5" font-size="13" font-weight="700">${lab}</text><text x="${x+bw/2}" y="${v>=0?y-8:y+ht+18}" text-anchor="middle" fill="${col}" font-size="13" font-weight="800">${money(v,2)}</text>`; if(!isTotal){prev=end; const nx=left+(i+1)*(bw+gap); body+=`<line x1="${x+bw}" y1="${Y(end)}" x2="${nx}" y2="${Y(end)}" stroke="#66a3ff" stroke-dasharray="4 4" opacity=".5"/>`;}}); $('payoff').innerHTML=svgWrap(w,h,body);}
 function renderHist(items){const isMobile=(typeof window!=='undefined')&&window.matchMedia&&window.matchMedia('(max-width: 720px)').matches; const vals=items.map(t=>t.pnl_pct).filter(Number.isFinite), w=760,h=isMobile?720:390,bins=18,left=54,right=724,top=24,bottom=h-72; const tickLblY=bottom+24, subtitleY=h-16, midY=Math.round(h/2); if(!vals.length){$('hist').innerHTML=svgWrap(w,h,`<text x="${w/2}" y="${midY}" fill="#9d9a91" text-anchor="middle" font-size="14" font-weight="750">No trades in selected time range</text>`);return} const mn=Math.min(...vals), mx=Math.max(...vals), span=mx-mn||1, counts=Array(bins).fill(0); vals.forEach(v=>counts[Math.min(bins-1,Math.floor((v-mn)/span*bins))]++); const m=Math.max(...counts,1), bw=(right-left)/bins; let body=`<text x="${w/2}" y="${subtitleY}" fill="#9d9a91" font-size="12" font-weight="650" text-anchor="middle">Trade return % buckets • ${items.length} round trips</text>`; counts.forEach((c,i)=>{const mid=mn+(i+.5)*span/bins, x=left+i*bw, bh=(bottom-top)*c/m, y=bottom-bh, col=mid>=0?'#30d158':'#ff453a'; body+=`<rect x="${x}" y="${y}" width="${Math.max(2,bw-4)}" height="${Math.max(1,bh)}" rx="5" fill="${col}" opacity=".88"/><text x="${x+bw/2}" y="${y-6}" fill="${col}" font-size="10.5" font-weight="800" text-anchor="middle">${c||''}</text>`; if(i%2===0 || i===bins-1) body+=`<text x="${x+bw/2}" y="${tickLblY}" fill="#9d9a91" font-size="10" text-anchor="middle">${mid.toFixed(0)}%</text>`;}); const zx=left+(0-mn)/span*(right-left); if(zx>=left&&zx<=right) body+=`<line x1="${zx}" y1="${top}" x2="${zx}" y2="${bottom}" stroke="#f4f1ea" opacity=".35"/><text x="${zx+4}" y="${top+12}" fill="#d8d2c5" font-size="10">0%</text>`; $('hist').innerHTML=svgWrap(w,h,body);}
 function renderTables(items){const sessions=['Morning','Midday','Power hour','End of day','Outside RTH']; let th='<table><thead><tr><th>Session</th><th>Trades</th><th>Win rate</th><th>PF</th><th>PnL %</th></tr></thead><tbody>'; sessions.forEach(k=>{const s=summarize(items.filter(t=>sessionBucket(t.entry_dt)===k)); th+=`<tr><td>${k}</td><td>${s.n}</td><td>${s.wins}/${s.n} = ${s.wr.toFixed(1)}%</td><td class="${s.pf>=1?'good':'bad'}">${s.pf==null?'n/a':s.pf.toFixed(2)}</td><td class="${cls(s.pct)}">${pct(s.pct)}</td></tr>`;}); $('sessions').innerHTML=th+'</tbody></table>'; const hours=[7,8,9,10,11,12,13,14,15]; $('hours').innerHTML='<div class="mini">'+hours.map(h=>{const s=summarize(items.filter(t=>cstHM(t.entry_dt).h===h)); return `<div class="hour" style="background:${s.net>=0?'rgba(48,209,88,.11)':'rgba(255,69,58,.11)'}"><b>${h}:00 CST</b><span>${s.n} trades</span><span class="${cls(s.net)}">${money(s.net)}</span></div>`}).join('')+'</div>';}
+function renderKellyRolling(points){
+  const mount = $('sizingRolling');
+  if(!mount) return;
+  const scale = KELLY_MODE_MULT[kellyMode] || 0.5;
+  if(!points.length){
+    mount.innerHTML = svgWrap(760, 260, `<text x="380" y="136" fill="#9d9a91" text-anchor="middle" font-size="14" font-weight="750">Need at least 10 trading days of non-futures trades for the rolling sizing chart</text>`);
+    return;
+  }
+  const isMobile=(typeof window!=='undefined')&&window.matchMedia&&window.matchMedia('(max-width: 720px)').matches;
+  const w=760, h=isMobile?340:280, left=62, right=722, top=22, bottom=h-56;
+  const vals = points.flatMap(p => [p.fullSize, p.fullSize * scale]).filter(Number.isFinite);
+  const hi = Math.max(1, ...vals);
+  const step = niceStepFor(hi, 5);
+  const yMax = Math.ceil(hi / step) * step;
+  const X = i => left + (points.length === 1 ? 0 : (i / (points.length - 1)) * (right - left));
+  const Y = v => top + (yMax - v) / yMax * (bottom - top);
+  const fullPath = points.map((p,i)=>(i?'L':'M')+X(i).toFixed(1)+','+Y(p.fullSize).toFixed(1)).join(' ');
+  const selectedPath = points.map((p,i)=>(i?'L':'M')+X(i).toFixed(1)+','+Y(p.fullSize * scale).toFixed(1)).join(' ');
+  let body = '';
+  for(let y=0; y<=yMax + step * 0.5; y+=step){
+    const yy = Y(y);
+    body += `<line x1="${left}" y1="${yy}" x2="${right}" y2="${yy}" stroke="${y===0?'#ffffff':'#262a31'}" stroke-width="${y===0?2:1}" opacity="${y===0?'.76':'1'}"/><text x="${left-10}" y="${yy+4}" fill="#9d9a91" font-size="11" text-anchor="end">${moneyPlain(y)}</text>`;
+  }
+  const tickCount = Math.min(6, points.length);
+  for(let i=0;i<tickCount;i++){
+    const idx = Math.round(i * (points.length - 1) / Math.max(1, tickCount - 1));
+    const x = X(idx);
+    body += `<line x1="${x}" y1="${top}" x2="${x}" y2="${bottom}" stroke="#20242b"/><text x="${x}" y="${bottom+24}" fill="#9d9a91" font-size="11" text-anchor="middle">${cstDateLabel(points[idx].day)}</text>`;
+  }
+  body += `<path d="${fullPath}" fill="none" stroke="#ffd166" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="${selectedPath}" fill="none" stroke="#66a3ff" stroke-width="3" stroke-dasharray="8 6" stroke-linecap="round" stroke-linejoin="round"/>`;
+  const last = points[points.length - 1];
+  const fullY = Y(last.fullSize), selectedY = Y(last.fullSize * scale), labelX = right - 6;
+  body += `<circle cx="${right}" cy="${fullY}" r="4.5" fill="#ffd166" stroke="#0d0f13" stroke-width="2"/><circle cx="${right}" cy="${selectedY}" r="4.5" fill="#66a3ff" stroke="#0d0f13" stroke-width="2"/><text x="${labelX}" y="${Math.max(top+12, fullY-10)}" fill="#ffd166" font-size="11.5" font-weight="800" text-anchor="end">${moneyPlain(last.fullSize)}</text><text x="${labelX}" y="${Math.min(bottom-8, selectedY+16)}" fill="#66a3ff" font-size="11.5" font-weight="800" text-anchor="end">${moneyPlain(last.fullSize * scale)}</text><text x="${w/2}" y="${h-12}" fill="#9d9a91" font-size="12" font-weight="650" text-anchor="middle">10 trading-day lookback · zero floor when Kelly turns negative</text>`;
+  mount.innerHTML = svgWrap(w,h,body);
+}
+function renderPositionSizing(baseItems){
+  wireKellyControls();
+  const summaryEl = $('sizingSummary');
+  if(!summaryEl) return;
+  const data = currentKellyData(baseItems);
+  const selectedRow = data.rows.find(r => r.mode === kellyMode) || data.rows[1];
+  const fullRow = data.rows.find(r => r.mode === 'full') || data.rows[0];
+  const doubleRow = data.rows.find(r => r.mode === 'double') || null;
+  const noStopRow = data.rows.find(r => r.mode === 'nostop') || null;
+  if(data.stopModel.n < 5){
+    summaryEl.innerHTML = `<div class="sizing-note-card" style="grid-column:1/-1"><p>Need at least 5 closed non-futures trades with valid entry cost to compute a Kelly recommendation for the current filter set.</p></div>`;
+    if($('sizingSensitivityNote')) $('sizingSensitivityNote').innerHTML = '<p>No Kelly sensitivity available yet.</p>';
+    if($('sizingEdgeGrid')) $('sizingEdgeGrid').innerHTML = '';
+    if($('sizingSensitivityBody')) $('sizingSensitivityBody').innerHTML = '';
+    if($('sizingCalcCopy')) $('sizingCalcCopy').innerHTML = '<h3>Calculation</h3><p>Kelly sizing appears once the filtered sample has enough closed non-futures trades to form a payoff estimate.</p>';
+    if($('sizingAssumptionCopy')) $('sizingAssumptionCopy').innerHTML = '<h3>Assumptions</h3><p>Futures are excluded here because the position-size conversion assumes a stop as a percent of deployed premium or cash cost.</p>';
+    renderKellyRolling([]);
+    return;
+  }
+  const selectedName = kellyMode.charAt(0).toUpperCase() + kellyMode.slice(1);
+  summaryEl.innerHTML = [
+    `<div class="sizing-stat"><div class="sizing-stat-label">${selectedName} Kelly premium size</div><div class="sizing-stat-value ${selectedRow.positionSize>0?'good':'amber'}">${moneyPlain(selectedRow.positionSize,0)}</div><div class="sizing-stat-note">Current recommendation from the filtered sample at a ${kellyStopPct}% max-loss cap.</div></div>`,
+    `<div class="sizing-stat"><div class="sizing-stat-label">Max risk / trade</div><div class="sizing-stat-value ${selectedRow.maxRisk>0?'amber':'bad'}">${moneyPlain(selectedRow.maxRisk,0)}</div><div class="sizing-stat-note">${kellyPct(selectedRow.appliedRiskFrac)} of the current account size. Premium size = risk / stop fraction.</div></div>`,
+    `<div class="sizing-stat"><div class="sizing-stat-label">Expected P/L / trade</div><div class="sizing-stat-value ${Number.isFinite(selectedRow.expectedProfit)&&selectedRow.expectedProfit>=0?'good':'bad'}">${moneyPlain(selectedRow.expectedProfit,2)}</div><div class="sizing-stat-note">Selected-mode expectancy on stop-capped returns. Full Kelly expectation: ${moneyPlain(fullRow.expectedProfit,2)}.</div></div>`,
+    `<div class="sizing-stat"><div class="sizing-stat-label">Full Kelly risk fraction</div><div class="sizing-stat-value ${Number.isFinite(data.stopModel.rawKelly)&&data.stopModel.rawKelly>0?'amber':'bad'}">${kellyPct(data.stopModel.rawKelly)}</div><div class="sizing-stat-note">Traditional Kelly <code>f=(bp-q)/b</code> on the capped sample, before the full/half/quarter multiplier.</div></div>`,
+    `<div class="sizing-stat"><div class="sizing-stat-label">Practical ruin</div><div class="sizing-stat-value ${Number.isFinite(selectedRow.ruinProb)&&selectedRow.ruinProb<0.15?'good':'bad'}">${kellyPct(selectedRow.ruinProb)}</div><div class="sizing-stat-note">Monte Carlo over ${KELLY_SIM_HORIZON} future trades. Ruin = equity falling below ${(KELLY_RUIN_FLOOR*100).toFixed(0)}% of start.</div></div>`,
+    `<div class="sizing-stat"><div class="sizing-stat-label">Expected max drawdown</div><div class="sizing-stat-value ${Number.isFinite(selectedRow.meanMaxDrawdown)&&selectedRow.meanMaxDrawdown<0.25?'good':'bad'}">${kellyPct(selectedRow.meanMaxDrawdown)}</div><div class="sizing-stat-note">Average worst peak-to-trough drawdown from the same Monte Carlo run.</div></div>`
+  ].join('');
+  if($('sizingSensitivityNote')){
+    const stopKelly = Number.isFinite(data.stopModel.rawKelly) ? kellyPct(data.stopModel.rawKelly) : '—';
+    const noStopKelly = Number.isFinite(data.noStopModel.rawKelly) ? kellyPct(data.noStopModel.rawKelly) : '—';
+    const fullLg = Number.isFinite(fullRow.logGrowth) ? kellyBps(fullRow.logGrowth) : '—';
+    const doubleLg = doubleRow && Number.isFinite(doubleRow.logGrowth) ? kellyBps(doubleRow.logGrowth) : '—';
+    const fullRuin = Number.isFinite(fullRow.ruinProb) ? kellyPct(fullRow.ruinProb) : '—';
+    const doubleRuin = doubleRow && Number.isFinite(doubleRow.ruinProb) ? kellyPct(doubleRow.ruinProb) : '—';
+    $('sizingSensitivityNote').innerHTML = `<p><b>No-stop sensitivity:</b> with a ${kellyStopPct}% cap, full Kelly is <b>${stopKelly}</b>. Removing the stop moves raw full Kelly to <b>${noStopKelly}</b>. <b>Double Kelly:</b> log growth shifts from <b>${fullLg}</b> to <b>${doubleLg}</b> per trade, while practical ruin expands from <b>${fullRuin}</b> to <b>${doubleRuin}</b>.</p>`;
+  }
+  if($('sizingEdgeGrid')){
+    $('sizingEdgeGrid').innerHTML = [
+      `<div class="sizing-mini"><b>Sample</b><span>${data.stopModel.n} trades / ${data.stopModel.tradingDays} days</span></div>`,
+      `<div class="sizing-mini"><b>Win vs loss</b><span>p ${kellyDec(data.stopModel.p,3)} · q ${kellyDec(data.stopModel.q,3)}</span></div>`,
+      `<div class="sizing-mini"><b>Payoff b</b><span>${kellyRatio(data.stopModel.b,2)}</span></div>`,
+      `<div class="sizing-mini"><b>Mean capped return</b><span>${kellyPct(data.stopModel.meanReturn,2)}</span></div>`
+    ].join('');
+  }
+  if($('sizingSensitivityBody')){
+    $('sizingSensitivityBody').innerHTML = data.rows.map(row => {
+      const active = row.mode === kellyMode ? ' class="is-active"' : '';
+      const growthClass = Number.isFinite(row.logGrowth) ? (row.logGrowth >= 0 ? 'pos' : 'neg') : 'muted-cell';
+      const ruinClass = Number.isFinite(row.ruinProb) ? (row.ruinProb < 0.15 ? 'pos' : 'neg') : 'muted-cell';
+      return `<tr${active}><td>${row.label}</td><td>${kellyPct(row.appliedRiskFrac)}</td><td>${moneyPlain(row.positionSize,0)}</td><td>${moneyPlain(row.maxRisk,0)}</td><td>${moneyPlain(row.expectedProfit,2)}</td><td class="${growthClass}">${Number.isFinite(row.logGrowth)?kellyBps(row.logGrowth):'—'}</td><td class="${ruinClass}">${Number.isFinite(row.ruinProb)?kellyPct(row.ruinProb):'—'}</td><td>${Number.isFinite(row.meanMaxDrawdown)?kellyPct(row.meanMaxDrawdown):'—'}</td></tr>`;
+    }).join('');
+  }
+  if($('sizingCalcCopy')){
+    $('sizingCalcCopy').innerHTML = `<h3>Calculation</h3><p>Uses the current dashboard filters, excludes futures, caps each losing trade at <code>-${kellyStopPct}%</code> of entry gross cost, then computes traditional Kelly with <code>p=${kellyDec(data.stopModel.p,3)}</code>, <code>q=${kellyDec(data.stopModel.q,3)}</code>, and <code>b=${kellyRatio(data.stopModel.b,3)}</code>. Recommended risk is <code>account × Kelly fraction</code>; premium size is <code>risk ÷ ${(kellyStopPct/100).toFixed(2)}</code>. No shrinkage, Bayesian adjustment, or safety haircut is applied beyond the selected full/half/quarter multiplier.</p>`;
+  }
+  if($('sizingAssumptionCopy')){
+    $('sizingAssumptionCopy').innerHTML = `<h3>Assumptions</h3><p>Scratch trades stay in the sample but not in the win/loss averages. “No stop” uses realized uncapped outcomes. Practical ruin is a simulation metric, not a closed-form guarantee: ${KELLY_SIM_PATHS} bootstrap paths, ${KELLY_SIM_HORIZON} trades ahead, ruin defined as equity dropping below ${(KELLY_RUIN_FLOOR*100).toFixed(0)}% of start. The rolling chart below uses a trailing 10-trading-day lookback and floors negative Kelly windows at zero dollars.</p>`;
+  }
+  renderKellyRolling(data.rolling);
+}
 function renderStreak(){const base=currentBaseTrades(); $('streak').innerHTML='<div class="ticks">'+trades.map(t=>`<span class="tick ${t.net_pnl>0?'w':'l'} ${base.includes(t)?'':'excluded'}"></span>`).join('')+'</div>';}
 function renderScenario(base, effective){const universe=axisBaseTrades(); const baseline=summarize(universe); const adjusted=summarize(effective); const moved=effective.filter(t=>t.scenario_moved); const excluded=universe.length-base.length; const eligible=base.filter(t=>t.pnl_pct < thresholdPct); if(scenarioActive){const filterPart=excluded>0?`${excluded} trade(s) filtered out + `:''; $('scenarioPanel').innerHTML=`<b>Scenario active:</b> ${filterPart}${moved.length} trade(s) moved up to ${pct(thresholdPct)}. Adjusted PnL ${money(adjusted.net,2)} vs baseline ${money(baseline.net,2)}. Impact: <b class="${cls(adjusted.net-baseline.net)}">${money(adjusted.net-baseline.net,2)}</b>. PF ${baseline.pf?baseline.pf.toFixed(2):'n/a'} → ${adjusted.pf?adjusted.pf.toFixed(2):'n/a'}.`; } else {$('scenarioPanel').innerHTML=`Loss line: <b>${pct(thresholdPct)}</b>. ${eligible.length} visible trade(s) are below the line. Box-select dots, then click <b>Move below line to line</b> to model better stops.`;}}
 function quantile(arr,q){if(!arr.length)return 0; const a=arr.slice().sort((x,y)=>x-y), pos=(a.length-1)*q, lo=Math.floor(pos), hi=Math.ceil(pos); return lo===hi?a[lo]:a[lo]+(a[hi]-a[lo])*(pos-lo);}
@@ -556,7 +1074,7 @@ function computeTimeRange(baseItems){
   for(let v=start; v<=hi; v+=step) ticks.push(v);
   return {lo,hi,ticks};
 }
-function render(){const base=currentBaseTrades(); const effective=applyScenario(base); renderCards(effective); renderCalendar(effective); renderPctCalendar(effective); renderScatter(base); renderCurve(effective); renderPayoff(effective); renderHist(effective); renderTables(effective); renderStreak(); renderScenario(base,effective); updatePills(base);}
+function render(){const base=currentBaseTrades(); const effective=applyScenario(base); const baselineCurve=axisBaseTrades(); const overlayScatterCurve=curveOverlayActive(); renderCards(effective); renderCalendar(effective); renderPctCalendar(effective); renderScatter(base); renderCurve(effective,{baselineItems:baselineCurve,showOriginalOverlay:overlayScatterCurve}); if($('curveModalChart')) renderCurve(effective,{targetId:'curveModalChart',expanded:true,baselineItems:baselineCurve,showOriginalOverlay:overlayScatterCurve}); renderPayoff(effective); renderPositionSizing(base); renderHist(effective); renderTables(effective); renderStreak(); renderScenario(base,effective); updatePills(base);}
 $('includeSelection').onclick=()=>{if(!pendingSelection.size)return; scatterIds=new Set(pendingSelection); scatterMode='include'; pendingSelection.clear(); $('selectionCount').textContent='Active include filter applied'; render();};
 $('excludeSelection').onclick=()=>{if(!pendingSelection.size)return; scatterIds=new Set(pendingSelection); scatterMode='exclude'; pendingSelection.clear(); $('selectionCount').textContent='Active exclude filter applied'; render();};
 $('moveBelowLine').onclick=()=>{const base=currentBaseTrades(); const candidateIds=pendingSelection.size?pendingSelection:new Set(base.map(t=>t.id)); scenarioIds=new Set([...candidateIds].filter(id=>{const t=trades.find(x=>x.id===id); return t && base.includes(t) && t.pnl_pct < thresholdPct;})); scenarioActive=scenarioIds.size>0; pendingSelection.clear(); $('selectionCount').textContent=scenarioActive?`Scenario moved ${scenarioIds.size} dots`:'No selected/visible dots below line'; render();};
@@ -575,9 +1093,9 @@ $('resetAll').onclick=()=>{
   refreshDateRangeLabel();
   render();
 };
-document.querySelectorAll('.expand').forEach(btn=>btn.onclick=()=>{const panel=btn.closest('.panel'); $('modalContent').innerHTML='<h2>'+panel.querySelector('h2').textContent+'</h2><div class="hint">Expanded read-only view. Use controls on the main chart to filter.</div>'+panel.innerHTML.replace(/<button class="expand">Expand<\/button>/,''); $('modalContent').querySelectorAll('[id]').forEach(el=>el.removeAttribute('id')); $('modalContent').querySelectorAll('button').forEach(el=>el.remove()); $('modal').classList.add('open');});
-$('closeModal').onclick=()=> $('modal').classList.remove('open');
-$('modal').onclick=e=>{if(e.target.id==='modal') $('modal').classList.remove('open');};
+document.querySelectorAll('.expand').forEach(btn=>btn.onclick=()=>{const panel=btn.closest('.panel'); if(panel && panel.id==='curvePanel'){openCurveModal(); return;} $('modalContent').innerHTML='<h2>'+panel.querySelector('h2').textContent+'</h2><div class="hint">Expanded read-only view. Use controls on the main chart to filter.</div>'+panel.innerHTML.replace(/<button class="expand">Expand<\/button>/,''); $('modalContent').querySelectorAll('[id]').forEach(el=>el.removeAttribute('id')); $('modalContent').querySelectorAll('button').forEach(el=>el.remove()); $('modal').classList.add('open');});
+$('closeModal').onclick=closeModal;
+$('modal').onclick=e=>{if(e.target.id==='modal') closeModal();};
 // ----- Date-range popover wiring -----
 // Single popover with quick-pick shortcuts (Today, Last 7 days, This week,
 // This month, Last 30 days, All time) plus a custom Date input range. The
@@ -661,5 +1179,5 @@ render();
 })();
 
 </script>
-<script src="/assets/cards.js?v=carousel7" defer></script>
+<script src="/assets/cards.js?v=carousel8" defer></script>
 </body></html>
